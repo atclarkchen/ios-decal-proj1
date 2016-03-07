@@ -197,7 +197,7 @@ class ToDoListTableViewController: UITableViewController {
         var curr = NSDate()
         var timeDif = curr.timeIntervalSinceDate(item.creationDate)
         print(timeDif)
-        if timeDif > (10) {
+        if timeDif > (86400) {
             // remove
             
             let index = toDoItems.indexOfObject(item)
